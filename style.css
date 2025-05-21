@@ -1,0 +1,148 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color: #f8f0f8;
+}
+.hero{
+    background-color: #910291;
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.hero:before{
+    content: '';
+    position: absolute;
+    height: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: green;
+    background: linear-gradient(to left, #c563c5, #da00da 50%, rgb(182, 14, 168) 50%, rgb(116, 10, 116));
+   
+}
+.hero:after{
+    content: '';
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(to right, #c563c5, #da00da 50%, rgb(182, 14, 168) 50%, rgb(116, 10, 116));
+   
+}
+.hero h1{
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 0;
+}
+.hero h2{
+    font-weight: normal;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.filter-nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.filter-nav a{
+    text-decoration: none;
+
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: solid #c447c9 1px;
+    border-radius: 5px;
+    color: #910291;
+    transition: all .3s ease-in-out;
+}
+.filter-nav a:hover{
+    background-color: #d3c6d3;
+
+}
+.filter-nav .active{
+    background-color: #910291;
+    color: white;
+}
+.filter-nav .active:hover{
+    background-color: #910291;
+    color: white;
+    cursor: default;
+}
+.animal{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.animal-card{
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: white;
+    margin-bottom: 30px;
+    
+  
+    border-radius: 20px;
+    overflow: hidden;
+}
+.animal-card-photo img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+    
+}
+.animal-card:hover img{
+    transform: rotate(20deg) scale(1.05);
+}
+.animal-card-photo{
+    order: 1;
+    grid-row: 1;
+}
+.animal-card-text{
+    order: 2;
+    grid-row: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.animal-card-text h3{
+    margin: 0;
+    padding: 0%;
+    font-weight: normal;
+    font-size: 1.8rem;
+
+}
+.animal-card-text small{
+    font-size: 1.2rem;
+    color: #978497;
+    font-weight: normal;
+}
+.animal-card-text p{
+    font-size: 1.2rem;
+    
+    font-weight: normal;
+    margin: .8rem;
+    padding: 0;
+}
+.primary-btn{
+    background: linear-gradient(#910291, #c563c5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+@media screen and (min-width: 768px){
+   .animal-card{
+        grid-template-columns: 200px 1fr;
+
+    }
+    .hero h1{
+        font-size: 6 rem;
+    }
+
+}

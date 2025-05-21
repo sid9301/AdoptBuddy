@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet adoption list</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome</h1>
+        <h2>our friends needs a home</h2>
+    </div>
+<div class="filter-nav">
+    <a href="#" data-filter="all" class="active">All animals</a>
+    <a href="#" data-filter="dog">only dogs</a>
+    <a href="#" data-filter="cat">only cats</a>
+    <a href="#" data-filter="rabbit">only rabbit</a>
+</div>
+<div class="animal">
+</div>
+<template id="animal-card">
+    <div class="animal-card">
+        <div class="animal-card-text">
+            <h3></h3>
+            <small><span class="age">3 year old - Cat</span><span class="species"></span></small>
+            <p class="discription">Meowsalot is a talkative friend that loves to play and is great with children. He is looking for a forever home today!</p>
+            <a href="#" class="primary-btn">Adopt <span class="name"></span> </a>
+        </div>
+        <div class="animal-card-photo">
+            <img src="https://learnwebcode.github.io/pet-adoption-data/photos/meowsalot.webp" alt="">
+        </div>
+    </div>
+</template>
+</body>
+</html>
